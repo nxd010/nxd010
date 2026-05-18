@@ -1,14 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nischal Deo</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nischal Deo — Full-Stack & Systems Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Work on progress</h1>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ░░ HEADER ░░ -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo-bracket">[</span>nd<span class="logo-bracket">]</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+        <span class="toggle-icon light-icon"><i class="fa-solid fa-sun"></i></span>
+        <span class="toggle-icon dark-icon"><i class="fa-solid fa-moon"></i></span>
+      </button>
     </div>
+  </header>
+
+  <main>
+
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-inner">
+        <div class="hero-label">
+          <span class="mono">// available for opportunities</span>
+        </div>
+        <h1 class="hero-headline">
+          <span class="line-reveal">Hi, I'm</span>
+          <span class="line-reveal name-line">Nischal Deo.</span>
+        </h1>
+        <p class="hero-sub line-reveal">
+          I'm a CSE student at MNNIT &amp; aspiring Full-Stack &amp; Systems Engineer building
+          scalable web apps and smart embedded hardware systems.
+        </p>
+        <div class="hero-ctas line-reveal">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-arrow-down-long"></i>
+            See My Work
+          </a>
+          <a href="#" class="btn btn-ghost">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            Download Resume
+          </a>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span class="mono">scroll</span>
+          <span class="scroll-line"></span>
+        </div>
+      </div>
+      <div class="hero-deco" aria-hidden="true">
+        <div class="grid-bg"></div>
+        <div class="floating-pill pill-1"><span class="mono">FastAPI</span></div>
+        <div class="floating-pill pill-2"><span class="mono">YOLOv8</span></div>
+        <div class="floating-pill pill-3"><span class="mono">ESP32</span></div>
+        <div class="floating-pill pill-4"><span class="mono">React.js</span></div>
+      </div>
+    </section>
+
+    <!-- ░░ PROJECTS ░░ -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="section-inner">
+        <header class="section-header">
+          <span class="section-num mono">01</span>
+          <h2 id="projects-heading">Selected Work</h2>
+          <p class="section-desc">Three projects. Each one built to solve a real problem.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Card 1 -->
+          <article class="project-card" tabindex="0">
+            <div class="card-top">
+              <span class="card-index mono">P.01</span>
+              <div class="card-links">
+                <a href="#" class="icon-link" aria-label="Live Demo for Shelfies"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub Code for Shelfies"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="card-title">Shelfies</h3>
+            <p class="card-summary">
+              An AI-powered retail inventory system utilizing a custom object-detection pipeline to automate stock level tracking for 40+ unique SKUs. Includes a comprehensive full-stack analytics dashboard to track real-time stock levels and log checkout transactions.
+            </p>
+            <div class="tech-stack" aria-label="Tech stack">
+              <span class="badge">ReactJS</span>
+              <span class="badge">Flask</span>
+              <span class="badge">Python</span>
+              <span class="badge">YOLOv8</span>
+              <span class="badge">Kaggle</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-play"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub Code</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card featured" tabindex="0">
+            <div class="card-top">
+              <span class="card-index mono">P.02</span>
+              <div class="card-links">
+                <a href="#" class="icon-link" aria-label="Live Demo for Vayu"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub Code for Vayu"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="card-title">Vayu</h3>
+            <p class="card-summary">
+              A full-stack environmental IoT monitoring system using hardware microcontrollers and asynchronous APIs for high-frequency data ingestion. Features automated database optimization background tasks and a tiered data retention strategy to save long-term storage while preserving historical trends.
+            </p>
+            <div class="tech-stack" aria-label="Tech stack">
+              <span class="badge">ESP32</span>
+              <span class="badge">FastAPI</span>
+              <span class="badge">SQLite</span>
+              <span class="badge">ReactJS</span>
+              <span class="badge">SQLAlchemy</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-play"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub Code</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="project-card" tabindex="0">
+            <div class="card-top">
+              <span class="card-index mono">P.03</span>
+              <div class="card-links">
+                <a href="#" class="icon-link" aria-label="Live Demo for Deal Ninja"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a href="#" class="icon-link" aria-label="GitHub Code for Deal Ninja"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <h3 class="card-title">Deal Ninja</h3>
+            <p class="card-summary">
+              An automated e-commerce price-tracking and web-scraping service running continuous cron monitoring tasks. Includes a structured relational database layer and an automated notification pipeline via instant messaging APIs to alert users of price drops.
+            </p>
+            <div class="tech-stack" aria-label="Tech stack">
+              <span class="badge">Django</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Beautiful Soup</span>
+              <span class="badge">Cron</span>
+              <span class="badge">Telegram API</span>
+            </div>
+            <div class="card-actions">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fa-solid fa-play"></i> Live Demo</a>
+              <a href="#" class="btn btn-sm btn-ghost"><i class="fa-brands fa-github"></i> GitHub Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ SKILLS / EDUCATION / EXTRA ░░ -->
+    <section class="skills" id="skills" aria-labelledby="skills-heading">
+      <div class="section-inner">
+        <header class="section-header">
+          <span class="section-num mono">02</span>
+          <h2 id="skills-heading">Proof of Skills</h2>
+          <p class="section-desc">Experience, education, and a few wins along the way.</p>
+        </header>
+
+        <div class="skills-layout">
+
+          <!-- Technical Skills -->
+          <div class="skills-block">
+            <h3 class="block-title"><i class="fa-solid fa-terminal"></i> Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-group">
+                <span class="group-label mono">Languages</span>
+                <ul>
+                  <li>Python</li><li>C++</li><li>JavaScript</li>
+                  <li>C</li><li>Bash</li><li>PowerShell</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <span class="group-label mono">Dev Tools</span>
+                <ul>
+                  <li>Git</li><li>Postman</li><li>Docker</li><li>Kubernetes</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <span class="group-label mono">Frameworks</span>
+                <ul>
+                  <li>Django</li><li>React.js</li><li>Flask</li><li>Node.js</li>
+                </ul>
+              </div>
+              <div class="skill-group">
+                <span class="group-label mono">Cloud / DBs</span>
+                <ul>
+                  <li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="skills-block">
+            <h3 class="block-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <div class="edu-card">
+              <div class="edu-logo" aria-hidden="true">MNNIT</div>
+              <div class="edu-details">
+                <p class="edu-school">Motilal Nehru National Institute of Technology</p>
+                <p class="edu-degree">B.Tech — Computer Science &amp; Engineering</p>
+                <span class="edu-year mono">Graduating May 2027</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leadership -->
+          <div class="skills-block">
+            <h3 class="block-title"><i class="fa-solid fa-trophy"></i> Leadership &amp; Milestones</h3>
+            <div class="milestones">
+              <div class="milestone-item">
+                <span class="milestone-icon" aria-hidden="true">🥉</span>
+                <div>
+                  <p class="milestone-role">Head Coordinator — Nepathya Cultural Committee, MNNIT</p>
+                  <p class="milestone-desc">Managed logistical and technical progress; achieved 2nd runner-up in national college fest among 12+ competing teams.</p>
+                </div>
+              </div>
+              <div class="milestone-item">
+                <span class="milestone-icon" aria-hidden="true">🥈</span>
+                <div>
+                  <p class="milestone-role">Coordinator — MNNIT FC</p>
+                  <p class="milestone-desc">Achieved 1st runner-up in Inter-College football tournament facing 15+ nationwide teams.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ░░ CONTACT ░░ -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner contact-inner">
+        <header class="section-header">
+          <span class="section-num mono">03</span>
+          <h2 id="contact-heading">Get in Touch</h2>
+          <p class="section-desc">Have a project in mind? Let's talk.</p>
+        </header>
+
+        <div class="contact-layout">
+          <form class="contact-form" action="#" method="POST" aria-label="Contact form" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+
+          <div class="contact-aside">
+            <p class="aside-tagline">Open to internships, collaborations, and interesting problems.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="GitHub profile">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:nischaldeo@outlook.com" class="social-link" aria-label="Send email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>nischaldeo@outlook.com</span>
+              </a>
+            </div>
+            <div class="contact-deco mono">
+              <span>&lt;/ready_to_build&gt;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="mono footer-copy">© 2025 Nischal Deo. Built with care.</span>
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:nischaldeo@outlook.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
